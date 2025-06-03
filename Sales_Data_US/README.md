@@ -34,11 +34,9 @@ This project aims to simulate a real-world data engineering workflow using a sal
 
 ## 📊 The Data Set
 
-The dataset contains historical information on vehicle sales, including:
+The dataset contains historical information on supermarket sales, including:
 
-- Vehicle features: `make`, `model`, `trim`, `transmission`, etc.
-- Sale metadata: `sellingprice`, `saledate`, `mmr`
-- Customer and transaction details like `state`, `odometer`, and `condition`
+- 
 
 📝 **Reason for Selection**:
 - Rich in categorical and numeric fields
@@ -80,7 +78,7 @@ The ERD below shows the three core tables in the final relational schema:
 ### 🔹 SALES_ORDER  
 - `order_id`, `order_date`, `ship_date`, `customer_id`, `product_id`, etc.
 
-🖼️ ![ERD](./Screenshot%202025-06-03%20153343.jpg)
+🖼️ ![ERD]()
 
 ---
 
@@ -99,5 +97,5 @@ This project solidified core concepts of:
 ## 🔗 Connect With Me
 
 Let’s connect!  
-🔹 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+🔹 [LinkedIn](http://www.linkedin.com/in/kabirat-adeniyi-2899a0245)  
 🔹 GitHub: [@Kadeniyi23](https://github.com/Kadeniyi23)
