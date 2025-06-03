@@ -90,7 +90,105 @@ This project solidified core concepts of:
 - Foreign key enforcement
 - Handling messy real-world data
 
-✅ **Key takeaway**: Good data starts with **good structure**. Building reliable pipelines begins with mastering foundational skills like modeling, validation, and transformation.
+✅ **Key takeaway**: Good data starts with **good structure**. Building reliable pipelines begins with mastering foundational skills like modeling, validation, and transformation.# 🛒 Supermarket Sales — Data Engineering Project
+
+A project that demonstrates data engineering principles using a supermarket sales dataset. This project focuses on data ingestion, normalization, relational modeling, and ERD visualization to support analytics-ready pipelines.
+
+---
+
+## 📌 Introduction & Goals
+
+This project simulates the lifecycle of preparing structured sales data for a supermarket business. The dataset includes detailed transaction records like product purchases, customer segments, payment modes, and returns.
+
+- **Data Source**: Supermarket sales records across regions with fields like customer info, product details, and financial metrics.
+- **Goal**: Design a normalized relational database (3NF) to enable efficient querying and reporting.
+- **Tools Used**: 
+  - `pandas` for cleaning and prep
+  - `MySQL` for data modeling and storage
+  - SQL Workbench for ERD generation
+- **Deliverables**:
+  - 3NF schema across product, customer, and order dimensions
+  - Entity Relationship Diagram (ERD)
+  - Populated MySQL tables ready for queries
+
+---
+
+## 📁 Contents
+
+- [🛍️ The Data Set](#the-data-set)
+- [🧰 Tools Used](#tools-used)
+- [⚙️ Pipeline Overview](#pipeline-overview)
+- [🧱 Entity-Relationship Diagram (ERD)](#entity-relationship-diagram)
+- [📌 Conclusion](#conclusion)
+- [🔗 Connect](#connect)
+
+---
+
+## 🛍️ The Data Set
+
+This dataset contains transaction-level data with the following attributes:
+
+- Transaction metadata: `Order ID`, `Order Date`, `Ship Date`, `Ship Mode`
+- Customer details: `Customer ID`, `Customer Name`, `Segment`, `Country`, `City`, `State`, `Region`
+- Product info: `Product ID`, `Category`, `Sub-Category`, `Product Name`
+- Financials: `Sales`, `Profit`, `Quantity`, `Returns`, `Payment Mode`
+
+📝 **Why This Data?**
+- Clean blend of categorical and numeric fields
+- Realistic structure for retail transaction modeling
+- Suited for OLAP/BI workloads
+
+---
+
+## 🧰 Tools Used
+
+| Task           | Tool           | Purpose                              |
+|----------------|----------------|--------------------------------------|
+| Data Prep      | `pandas`       | Clean, split, and deduplicate fields |
+| Data Storage   | `MySQL`        | Host relational schema with 3NF      |
+| Modeling/ERD   | MySQL Workbench| Visual schema validation             |
+
+---
+
+## ⚙️ Pipeline Overview
+
+1. Load raw Excel/CSV data
+2. Clean and split compound columns (e.g. names)
+3. Normalize into 3NF (`Customer`, `Product`, `Orders`)
+4. Establish foreign keys for integrity
+5. Generate ERD to validate relationships
+
+---
+
+## 🧱 Entity-Relationship Diagram
+
+This ERD models 3 key entities with proper referential design:
+
+### 🧍 CUSTOMER  
+- `customer_id`, `name`, `segment`, `state`, `region`, etc.
+
+### 📦 PRODUCT  
+- `product_id`, `product_name`, `category`, `sub_category`
+
+### 🧾 SALES_ORDER  
+- `order_id`, `order_date`, `ship_date`, `sales`, `profit`, `returns`, etc.
+
+🖼️ ![ERD](./assets_files/Sales_data)
+
+---
+
+## 📌 Conclusion
+
+This supermarket sales project covered:
+
+- Building relational models from semi-structured data
+- Applying 3NF normalization
+- Designing customer-product-order relationships
+- Preparing datasets for BI and analytics use cases
+
+✅ **Key Learning**: Strong foundational modeling enables clean, scalable data pipelines.
+
+---
 
 ---
 
