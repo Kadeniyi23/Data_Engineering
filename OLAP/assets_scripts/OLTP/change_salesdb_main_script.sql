@@ -1,1 +1,0 @@
-USE Brazilian_Supermarket_Sales;
