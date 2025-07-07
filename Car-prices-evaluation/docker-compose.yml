@@ -1,0 +1,12 @@
+services:
+    db:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE : Car_sales
+            MYSQL_USER: KABIRAT
+            MYSQL_PASSWORD : password
+
+        ports:
+            -   "42333:3306"
+
